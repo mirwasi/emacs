@@ -65,20 +65,11 @@
 (add-to-list 'load-path
 			 "~/Dropbox/Emacs")
 (add-to-list 'load-path
-			 "~/Dropbox/Emacs/color-themes/")
+			 "~/Dropbox/Emacs/color-theme/")
 (add-to-list 'load-path
-             "~/Dropbox/Emacs/color-themes/color-theme-solarized")
+             "~/Dropbox/Emacs/color-theme/themes/color-theme-solarized/")
 (add-to-list 'load-path
 	     "~/Dropbox/Emacs/magit-1.0.0")
-
-
-;; ** colours **
-
-;; colour themes
-(require 'color-theme)
-(color-theme-initialize)
-(require 'color-theme-solarized)
-(require 'color-theme-zenburn)
 
 
 ;; ** programming tweaks **
@@ -276,6 +267,7 @@
  '(show-paren-mode t)
  '(tab-stop-list (quote (4 8 12 16 20 24 28 32 36 40)))
  '(tool-bar-mode nil))
+
 (custom-set-faces
   ;; custom-set-faces was added by Custom.
   ;; If you edit it by hand, you could mess it up, so be careful.
@@ -283,9 +275,17 @@
   ;; If there is more than one, they won't work right.
  '(font-lock-comment-face ((((class color) (min-colors 88) (background light)) (:foreground "DarkGreen"))))
  '(font-lock-string-face ((((class color) (min-colors 88) (background light)) (:foreground "RoyalBlue"))))
- '(which-func ((((class color)) (:foreground "Blue"))))
- '(which-func ((((class color) (background dark)) (:foreground "OliveDrab3"))))
- )
+ '(which-func ((((class color) (min-colors 88) (background dark)) (:foreground "OliveDrab3")))))
+
+
+
+;; ** colours **
+
+;; colour themes
+(require 'color-theme)
+(color-theme-initialize)
+(require 'color-theme-solarized)
+(require 'color-theme-zenburn)
 
 
 ;; *** PerlySense Config ***

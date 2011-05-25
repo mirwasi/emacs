@@ -8,7 +8,7 @@ you might want to turn off.
 ;; characters the Mac way i.e. Alt+e e to type é
 '(ns-right-alternate-modifier (quote none))
 
-Also it pressing Cmd+Space invokes spotlight and since Cmd is mapped
+Also pressing Cmd+Space invokes spotlight and since Cmd is mapped
 to Ctrl, we are unable to set a mark. I have therefore mapped
 C-S-Space and M-Space to the set-mark-command:
 
